@@ -173,6 +173,6 @@ do
 done
 #<<< main >>》
 
-echo "please run the comand <<<<   nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data/wangjiaxuan/script/qsub.py -s 1 -g 100g -c 8 -l 8 --mn -r qsub_run_main.sh -b 1 &  >>>>"
+echo "please run the comand <<<<   nohup /data3/Group7/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data3/Group7/wangjiaxuan/script/qsub_delh2.py -s 1 -g 100g -c 8 -l 8 --mn -r qsub_run_main.sh -b 1 &  >>>>"
 
 # rm -rf 00.rawdata 03.taxonomy 06.annotation 01.fastq_qc 04.assembly 07.abundcalc 02.rmhost 05.predict 08.binning sample.list util qsub_run_main.sh
