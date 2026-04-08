@@ -74,7 +74,7 @@ nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data/wangjiaxua
 
 > 脚本包含”序列过滤去冗余功能注释”
 
-终端输入`/data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data/wangjiaxuan/script/qsub.py -s 1 -g 100g -c 8 -l 8 -r big_sample.main_s2.sh`。 等到任务分析完成。
+终端输入`/data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data3/Group7/wangjiaxuan/script/qsub_delh2.py -s 1 -g 100g -c 8 -l 8 -r big_sample.main_s2.sh`。 等到任务分析完成。
 
 # Step2 投递big_sample.main_s3.sh
 
@@ -86,10 +86,10 @@ nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data/wangjiaxua
 bash big_sample.main_s3.sh -i ../test/sample.tsv
 ```
 
-然后根据提示运行命令`nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data/wangjiaxuan/script/qsub.py -s 1 -g 100g -c 8 -l 8 --mn -r qsub_run_main.sh -b 1 &`将投递任务挂起即可。
+然后根据提示运行命令`nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data3/Group7/wangjiaxuan/script/qsub_delh2.py -s 1 -g 100g -c 8 -l 8 --mn -r qsub_run_main.sh -b 1 &`将投递任务挂起即可。
 
 ```
-nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data/wangjiaxuan/script/qsub.py -s 1 -g 100g -c 8 -l 8 --mn -r qsub_run_main.sh -b 1 &
+nohup /data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python /data3/Group7/wangjiaxuan/script/qsub_delh2.py -s 1 -g 100g -c 8 -l 8 --mn -r qsub_run_main.sh -b 1 &
 ```
 
 随后等待等待所有样本分析结束。
