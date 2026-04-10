@@ -57,8 +57,8 @@ trimmomatic_p="SLIDINGWINDOW:4:20 MINLEN:50 ILLUMINACLIP:/tools/Trimmomatic-0.38
 cat ${input} | while read group sample fq1 fq2
 do
 echo "export PATH="/data3/Group7/wangjiaxuan/biosoft/miniconda3/bin/:\$PATH" && source activate meta && \
-pigz -p 8 -d -c 0.Input/${sample}.raw.R1.fq.gz -c > 0.Input/${sample}.R1.fq && \
-pigz -p 8 -d -c 0.Input/${sample}.raw.R2.fq.gz -c > 0.Input/${sample}.R2.fq && \
+pigz -p 8 -d -c 0.Input/${sample}.raw.R1.fq.gz > 0.Input/${sample}.R1.fq && \
+pigz -p 8 -d -c 0.Input/${sample}.raw.R2.fq.gz > 0.Input/${sample}.R2.fq && \
 /data3/Group7/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/kneaddata \
   -i 0.Input/${sample}.R1.fq \
   -i 0.Input/${sample}.R2.fq \
