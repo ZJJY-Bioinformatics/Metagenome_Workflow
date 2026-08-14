@@ -93,6 +93,7 @@ pigz -p 8 -d -c 0.Input/${sample}.raw.R2.fq.gz > 0.Input/${sample}.R2.fq && \
   --input_type fastq \
   -t rel_ab_w_read_stats \
   --nproc 12 \
+  --offline \
   --bowtie2out 2.Humann2_Quantity/${sample}_metagonem_mapping && \
 /data3/Group7/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/humann  \
   --threads 25 \
