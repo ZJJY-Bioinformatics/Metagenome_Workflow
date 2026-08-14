@@ -96,6 +96,7 @@ pigz -p 8 -d -c 0.Input/${sample}.raw.R2.fq.gz > 0.Input/${sample}.R2.fq && \
   --bowtie2out 2.Humann2_Quantity/${sample}_metagonem_mapping && \
 /data3/Group7/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/humann  \
   --threads 25 \
+  --metaphlan-options="--offline" \
   --input  1.Kneaddata_Clean/clean_data/${sample}.kneaddata.fastq \
   --output 2.Humann2_Quantity \
   --search-mode uniref90 && \
